@@ -1,0 +1,15 @@
+//
+//  PrefixHeader.pch
+//  subViewController
+//
+//  Created by Mr.H on 12/29/16.
+//  Copyright © 2016 Mr.H. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#import "constans.h"
+
+
+
+#endif /* PrefixHeader_pch */
