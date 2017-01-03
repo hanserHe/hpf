@@ -21,7 +21,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    // Do any additional setup after loading the view, typically from a nib.说的啥sdf dfsdfsdfsdf
+    // Do any additional setup after loading the view, typically from a nib.sadasdas
     
     [self.view addSubview:self.switchView];
 }
