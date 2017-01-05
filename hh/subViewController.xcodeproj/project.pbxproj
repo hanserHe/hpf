@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D10471991E1E175500CFEB13 /* image1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D10471981E1E175500CFEB13 /* image1.jpg */; };
+		D10471A01E1E2A7A00CFEB13 /* JPTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D104719F1E1E2A7A00CFEB13 /* JPTableViewController.m */; };
+		D10471A51E1E2DB500CFEB13 /* UIViewController+ClassName.m in Sources */ = {isa = PBXBuildFile; fileRef = D10471A21E1E2DB500CFEB13 /* UIViewController+ClassName.m */; };
+		D10471A61E1E2DB500CFEB13 /* WMFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D10471A41E1E2DB500CFEB13 /* WMFPSLabel.m */; };
+		D10471AA1E1E2EBA00CFEB13 /* JPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D10471A81E1E2EBA00CFEB13 /* JPTableViewCell.m */; };
+		D10471AB1E1E2EBA00CFEB13 /* JPTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10471A91E1E2EBA00CFEB13 /* JPTableViewCell.xib */; };
+		D10471AF1E1E2ED400CFEB13 /* JPCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D10471AD1E1E2ED400CFEB13 /* JPCollectionViewCell.m */; };
+		D10471B01E1E2ED400CFEB13 /* JPCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10471AE1E1E2ED400CFEB13 /* JPCollectionViewCell.xib */; };
+		D17C6A941E1CDDA4002CF72F /* Root.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D17C6A931E1CDDA4002CF72F /* Root.bundle */; };
 		D1AB4A6D1E14E3D5004E51C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AB4A6C1E14E3D5004E51C8 /* main.m */; };
 		D1AB4A701E14E3D5004E51C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AB4A6F1E14E3D5004E51C8 /* AppDelegate.m */; };
 		D1AB4A731E14E3D5004E51C8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D1AB4A721E14E3D5004E51C8 /* ViewController.m */; };
@@ -17,6 +26,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D10471981E1E175500CFEB13 /* image1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image1.jpg; sourceTree = "<group>"; };
+		D104719E1E1E2A7A00CFEB13 /* JPTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPTableViewController.h; sourceTree = "<group>"; };
+		D104719F1E1E2A7A00CFEB13 /* JPTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPTableViewController.m; sourceTree = "<group>"; };
+		D10471A11E1E2DB500CFEB13 /* UIViewController+ClassName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ClassName.h"; sourceTree = "<group>"; };
+		D10471A21E1E2DB500CFEB13 /* UIViewController+ClassName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ClassName.m"; sourceTree = "<group>"; };
+		D10471A31E1E2DB500CFEB13 /* WMFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WMFPSLabel.h; sourceTree = "<group>"; };
+		D10471A41E1E2DB500CFEB13 /* WMFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WMFPSLabel.m; sourceTree = "<group>"; };
+		D10471A71E1E2EBA00CFEB13 /* JPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPTableViewCell.h; sourceTree = "<group>"; };
+		D10471A81E1E2EBA00CFEB13 /* JPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPTableViewCell.m; sourceTree = "<group>"; };
+		D10471A91E1E2EBA00CFEB13 /* JPTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPTableViewCell.xib; sourceTree = "<group>"; };
+		D10471AC1E1E2ED400CFEB13 /* JPCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPCollectionViewCell.h; sourceTree = "<group>"; };
+		D10471AD1E1E2ED400CFEB13 /* JPCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPCollectionViewCell.m; sourceTree = "<group>"; };
+		D10471AE1E1E2ED400CFEB13 /* JPCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JPCollectionViewCell.xib; sourceTree = "<group>"; };
+		D17C6A931E1CDDA4002CF72F /* Root.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Root.bundle; sourceTree = "<group>"; };
 		D1AB4A681E14E3D5004E51C8 /* subViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = subViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1AB4A6C1E14E3D5004E51C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D1AB4A6E1E14E3D5004E51C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -44,9 +67,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D10471971E1E174800CFEB13 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				D10471981E1E175500CFEB13 /* image1.jpg */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		D104719D1E1E2A6B00CFEB13 /* FirstViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D104719E1E1E2A7A00CFEB13 /* JPTableViewController.h */,
+				D104719F1E1E2A7A00CFEB13 /* JPTableViewController.m */,
+				D10471A71E1E2EBA00CFEB13 /* JPTableViewCell.h */,
+				D10471A81E1E2EBA00CFEB13 /* JPTableViewCell.m */,
+				D10471A91E1E2EBA00CFEB13 /* JPTableViewCell.xib */,
+				D10471AC1E1E2ED400CFEB13 /* JPCollectionViewCell.h */,
+				D10471AD1E1E2ED400CFEB13 /* JPCollectionViewCell.m */,
+				D10471AE1E1E2ED400CFEB13 /* JPCollectionViewCell.xib */,
+			);
+			path = FirstViewController;
+			sourceTree = "<group>";
+		};
 		D1AB4A5F1E14E3D5004E51C8 = {
 			isa = PBXGroup;
 			children = (
+				D10471971E1E174800CFEB13 /* image */,
 				D1AB4A871E14F0E5004E51C8 /* PublicModel */,
 				D1AB4A6A1E14E3D5004E51C8 /* subViewController */,
 				D1AB4A691E14E3D5004E51C8 /* Products */,
@@ -64,6 +111,7 @@
 		D1AB4A6A1E14E3D5004E51C8 /* subViewController */ = {
 			isa = PBXGroup;
 			children = (
+				D104719D1E1E2A6B00CFEB13 /* FirstViewController */,
 				D1AB4A6E1E14E3D5004E51C8 /* AppDelegate.h */,
 				D1AB4A6F1E14E3D5004E51C8 /* AppDelegate.m */,
 				D1AB4A711E14E3D5004E51C8 /* ViewController.h */,
@@ -90,8 +138,13 @@
 		D1AB4A871E14F0E5004E51C8 /* PublicModel */ = {
 			isa = PBXGroup;
 			children = (
+				D10471A11E1E2DB500CFEB13 /* UIViewController+ClassName.h */,
+				D10471A21E1E2DB500CFEB13 /* UIViewController+ClassName.m */,
+				D10471A31E1E2DB500CFEB13 /* WMFPSLabel.h */,
+				D10471A41E1E2DB500CFEB13 /* WMFPSLabel.m */,
 				D1AB4A881E14F102004E51C8 /* SwitchView.h */,
 				D1AB4A891E14F102004E51C8 /* SwitchView.m */,
+				D17C6A931E1CDDA4002CF72F /* Root.bundle */,
 			);
 			path = PublicModel;
 			sourceTree = "<group>";
@@ -155,8 +208,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1AB4A7B1E14E3D5004E51C8 /* LaunchScreen.storyboard in Resources */,
+				D10471991E1E175500CFEB13 /* image1.jpg in Resources */,
 				D1AB4A781E14E3D5004E51C8 /* Assets.xcassets in Resources */,
 				D1AB4A761E14E3D5004E51C8 /* Main.storyboard in Resources */,
+				D17C6A941E1CDDA4002CF72F /* Root.bundle in Resources */,
+				D10471AB1E1E2EBA00CFEB13 /* JPTableViewCell.xib in Resources */,
+				D10471B01E1E2ED400CFEB13 /* JPCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,8 +224,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10471A51E1E2DB500CFEB13 /* UIViewController+ClassName.m in Sources */,
+				D10471AA1E1E2EBA00CFEB13 /* JPTableViewCell.m in Sources */,
+				D10471AF1E1E2ED400CFEB13 /* JPCollectionViewCell.m in Sources */,
+				D10471A61E1E2DB500CFEB13 /* WMFPSLabel.m in Sources */,
 				D1AB4A8A1E14F102004E51C8 /* SwitchView.m in Sources */,
 				D1AB4A731E14E3D5004E51C8 /* ViewController.m in Sources */,
+				D10471A01E1E2A7A00CFEB13 /* JPTableViewController.m in Sources */,
 				D1AB4A701E14E3D5004E51C8 /* AppDelegate.m in Sources */,
 				D1AB4A6D1E14E3D5004E51C8 /* main.m in Sources */,
 			);
@@ -329,6 +391,7 @@
 				D1AB4A811E14E3D5004E51C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

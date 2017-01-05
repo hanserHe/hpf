@@ -8,6 +8,9 @@
 
 #import "AppDelegate.h"
 #import "ViewController.h"
+#import "UIViewController+ClassName.h"
+#import "JPTableViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -17,9 +20,16 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    ViewController *vc = [[ViewController alloc] init];
+    [UIViewController displayClassName:YES];
+
+    
+    JPTableViewController *vc = [[JPTableViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
+//    ViewController *vc = [[ViewController alloc] init];
+//    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
+//    self.window.rootViewController = nav;
+    
     return YES;
 }
 
