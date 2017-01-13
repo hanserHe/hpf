@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "UIViewController+ClassName.h"
 #import "JPTableViewController.h"
+#import "LSPRootViewController.h"
 
 
 @interface AppDelegate ()
@@ -23,13 +24,14 @@
     [UIViewController displayClassName:YES];
 
     
-    JPTableViewController *vc = [[JPTableViewController alloc] init];
+    LSPRootViewController *vc = [[LSPRootViewController alloc] init];
     UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
     self.window.rootViewController = nav;
 //    ViewController *vc = [[ViewController alloc] init];
 //    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:vc];
 //    self.window.rootViewController = nav;
-    
+    [self.window makeKeyAndVisible];
+    //self.window.backgroundColor = [UIColor whiteColor];
     return YES;
 }
 

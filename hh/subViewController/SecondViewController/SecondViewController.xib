@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SecondViewController">
+            <connections>
+                <outlet property="contentView" destination="NpL-VP-DWA" id="0VS-dS-v8y"/>
+                <outlet property="headImageView" destination="bwj-Q9-rCb" id="qmg-Gq-9IA"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bwj-Q9-rCb">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="250" id="lJT-kl-8rp"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NpL-VP-DWA">
+                    <color key="backgroundColor" red="0.98413429299999999" green="1" blue="0.1985392051" alpha="1" colorSpace="calibratedRGB"/>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dBl-n2-wh6">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="CN6-w5-MFP"/>
+                        <constraint firstAttribute="height" constant="42" id="QMM-jO-SKk"/>
+                    </constraints>
+                    <state key="normal" image="backImage.png"/>
+                    <connections>
+                        <action selector="backButtonEvent:" destination="-1" eventType="touchUpInside" id="8nv-nG-pdR"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="NpL-VP-DWA" firstAttribute="top" secondItem="bwj-Q9-rCb" secondAttribute="bottom" id="53l-fM-mt0"/>
+                <constraint firstItem="NpL-VP-DWA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Btw-wd-KHQ"/>
+                <constraint firstAttribute="trailing" secondItem="bwj-Q9-rCb" secondAttribute="trailing" id="CIx-KE-UiT"/>
+                <constraint firstItem="dBl-n2-wh6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="30" id="Cvz-gS-CXQ"/>
+                <constraint firstAttribute="trailing" secondItem="NpL-VP-DWA" secondAttribute="trailing" id="bhb-Bc-ku0"/>
+                <constraint firstItem="bwj-Q9-rCb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dVW-la-sPr"/>
+                <constraint firstItem="bwj-Q9-rCb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="nKb-OS-yQD"/>
+                <constraint firstAttribute="bottom" secondItem="NpL-VP-DWA" secondAttribute="bottom" id="p1v-zg-z2y"/>
+                <constraint firstItem="dBl-n2-wh6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="57" id="pRC-6M-rrZ"/>
+            </constraints>
+        </view>
+    </objects>
+    <resources>
+        <image name="backImage.png" width="11" height="21"/>
+    </resources>
+</document>

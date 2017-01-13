@@ -7,12 +7,16 @@
 //
 
 #import "JPCollectionViewCell.h"
+#import "JPAnimationTool.h"
 
 @implementation JPCollectionViewCell
 
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.headImg.tag = JPCoverImageViewTag;
+    
 }
 
 @end

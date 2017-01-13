@@ -26,9 +26,9 @@
     _itemFlowLayOut = [[UICollectionViewFlowLayout alloc] init];
     _itemFlowLayOut.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     //初始化
-    _itemFlowLayOut.itemSize = CGSizeMake(20, 20);
+    _itemFlowLayOut.itemSize = CGSizeMake(200, 125);
     _itemFlowLayOut.sectionInset = UIEdgeInsetsMake(0, 10, 0, 10);
-    _itemFlowLayOut.minimumInteritemSpacing = 15;
+    _itemFlowLayOut.minimumInteritemSpacing = 50;
     
     self.collectionView.collectionViewLayout = _itemFlowLayOut;
     [self.collectionView registerNib:[UINib nibWithNibName:@"JPCollectionViewCell"  bundle:[NSBundle mainBundle]] forCellWithReuseIdentifier:@"JPCollectionViewCell"];
@@ -39,6 +39,14 @@
 }
 
 
+#pragma mark ---------------------------------------------------
+#pragma - UICollectionViewDelegate
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.delegate respondsToSelector:@selector(collectionViewDidSelectedItemIndexPath:collcetionView:forCell:)]) {
+        [self.delegate collectionViewDidSelectedItemIndexPath:indexPath collcetionView:collectionView forCell:self];
+    }
+}
+
 
 #pragma mark - UICollectionViewDataSouce
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
@@ -46,7 +54,7 @@
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    return 20;
+    return 5;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {

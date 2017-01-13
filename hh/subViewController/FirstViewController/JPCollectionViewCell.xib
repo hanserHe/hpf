@@ -14,8 +14,24 @@
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="NfT-7Q-pFR"/>
+                </subviews>
             </view>
             <color key="backgroundColor" red="0.25882352939999997" green="0.73725490199999999" blue="0.91764705879999997" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="NfT-7Q-pFR" secondAttribute="bottom" id="2i6-JQ-Ghw"/>
+                <constraint firstItem="NfT-7Q-pFR" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Fal-Fc-3fL"/>
+                <constraint firstAttribute="trailing" secondItem="NfT-7Q-pFR" secondAttribute="trailing" id="Lmg-nZ-y1o"/>
+                <constraint firstItem="NfT-7Q-pFR" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="T5Z-yM-BWP"/>
+            </constraints>
+            <connections>
+                <outlet property="headImg" destination="NfT-7Q-pFR" id="XvS-om-fdP"/>
+            </connections>
+            <point key="canvasLocation" x="-76" y="77"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="image1.jpg" width="200" height="200"/>
+    </resources>
 </document>

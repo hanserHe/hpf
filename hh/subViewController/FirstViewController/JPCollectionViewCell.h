@@ -10,4 +10,6 @@
 
 @interface JPCollectionViewCell : UICollectionViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *headImg;
+
 @end

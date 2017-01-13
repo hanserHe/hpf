@@ -8,9 +8,13 @@
 
 #import "JPTableViewController.h"
 #import "JPTableViewCell.h"
+#import "SecondViewController.h"
+#import "JPCollectionViewCell.h"
+#import "JPAnimationTool.h"
 
-@interface JPTableViewController ()<UITableViewDelegate,UITableViewDataSource>
+@interface JPTableViewController ()<UITableViewDelegate, UITableViewDataSource, JPTableViewCellDelegate>
 
+@property (strong, nonatomic) JPAnimationTool *animationTool;
 @end
 
 @implementation JPTableViewController
@@ -23,7 +27,11 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.view.backgroundColor = [UIColor whiteColor];
     self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    [self.tableView registerNib:[UINib nibWithNibName:NSStringFromClass([JPTableViewCell class]) bundle:nil] forCellReuseIdentifier:NSStringFromClass([JPTableViewCell class])];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,8 +39,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
-
+#pragma mark - Table view DataSource
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
@@ -49,57 +56,34 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellID = @"JPTableViewCell";
-    JPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID];
-    if (!cell) {
-        cell = [[[NSBundle mainBundle] loadNibNamed:cellID owner:self options:nil] firstObject];
-    }
+    
+    JPTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellID forIndexPath:indexPath];
+    
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.delegate = self;
+    
     
     return cell;
 }
 
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
+#pragma mark ----------------------------------------------------------------
+#pragma  -  JPTableViewCellDelegate
+-(void)collectionViewDidSelectedItemIndexPath:(NSIndexPath *)indexPath collcetionView:(UICollectionView *)collectionView forCell:(JPTableViewCell *)cell {
+    JPCollectionViewCell *collectionCell = (JPCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    SecondViewController *presentViewController = [[SecondViewController alloc] init];
+    presentViewController.headImg = collectionCell.headImg.image;
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    presentViewController.closeBlock =  [self.animationTool begainAnimationWithCollectionViewDidSelectedItemIndexPath:indexPath collcetionView:collectionView forViewController:self presentViewController:presentViewController afterPresentedBlock:presentViewController.fadeBlock];
 }
-*/
 
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
+-(JPAnimationTool *)animationTool{
+    if (!_animationTool) {
+        _animationTool = [JPAnimationTool new];
+    }
+    return _animationTool;
 }
-*/
 
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
