@@ -17,6 +17,9 @@
 @implementation WMFPSLabel
 
 - (void)dealloc{
+    
+    
+    
     [self.displayLink invalidate];
 }
 
